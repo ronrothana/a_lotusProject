@@ -1,0 +1,385 @@
+.body{
+  padding-top: 10px;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+/* From Uiverse.io by yaroslavas2001 */ 
+.btn {
+  height: 4em;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0px solid black;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 90%;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 17px;
+  z-index: 1;
+  color: #000;
+  margin-left: 200px;
+  padding: 4px 5px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.34);
+  transition: all 0.5s ease;
+}
+.text .texth4{
+  width: 1200px !important;
+  padding: 20px 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: 5;
+}
+.flower {
+  display: grid;
+  grid-template-columns: 1em 1em;
+  position: absolute;
+  transition: grid-template-columns 0.8s ease;
+}
+
+.flower1 {
+  top: -12px;
+  left: -13px;
+  transform: rotate(5deg);
+}
+
+.flower2 {
+  bottom: -5px;
+  left: 250px;
+  transform: rotate(35deg);
+}
+
+.flower3 {
+  bottom: -5px;
+  left: 750px;
+  transform: rotate(0deg);
+}
+
+.flower4 {
+  top: -14px;
+  transform: rotate(15deg);
+}
+
+.flower5 {
+  right: 11px;
+  top: -3px;
+  transform: rotate(25deg);
+}
+
+.flower6 {
+  right: -200px;
+  bottom: -5px;
+  transform: rotate(30deg);
+}
+
+.petal {
+  height: 1em;
+  width: 1em;
+  border-radius: 40% 70% / 7% 90%;
+  background: linear-gradient(#07a6d7, #93e0ee);
+  border: 0.5px solid #96d1ec;
+  z-index: 0;
+  transition: width 0.8s ease, height 0.8s ease;
+}
+
+.two {
+  transform: rotate(90deg);
+}
+
+.three {
+  transform: rotate(270deg);
+}
+
+.four {
+  transform: rotate(180deg);
+}
+
+.btn:hover .petal {
+  background: linear-gradient(#0761d7, #93bdee);
+  border: 0.5px solid #96b4ec;
+}
+
+.btn:hover .flower {
+  grid-template-columns: 1.5em 1.5em;
+}
+
+.btn:hover .flower .petal {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.btn:hover .text {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.btn:hover div.flower1 {
+  animation: 15s linear 0s normal none infinite running flower1;
+}
+
+@keyframes flower1 {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
+.btn:hover div.flower2 {
+  animation: 13s linear 1s normal none infinite running flower2;
+}
+
+@keyframes flower2 {
+  0% {
+    transform: rotate(35deg);
+  }
+
+  100% {
+    transform: rotate(-325deg);
+  }
+}
+
+.btn:hover div.flower3 {
+  animation: 16s linear 1s normal none infinite running flower3;
+}
+
+@keyframes flower3 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn:hover div.flower4 {
+  animation: 17s linear 1s normal none infinite running flower4;
+}
+
+@keyframes flower4 {
+  0% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(375deg);
+  }
+}
+
+.btn:hover div.flower5 {
+  animation: 20s linear 1s normal none infinite running flower5;
+}
+
+@keyframes flower5 {
+  0% {
+    transform: rotate(25deg);
+  }
+
+  100% {
+    transform: rotate(-335deg);
+  }
+}
+
+.btn:hover div.flower6 {
+  animation: 15s linear 1s normal none infinite running flower6;
+}
+
+@keyframes flower6 {
+  0% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(390deg);
+  }
+}
+
+
+
+h1.welcome{
+  width: 106.4% !important;
+  padding: 60px 0px;
+}
+.all{
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+div.bigbox{
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.bigbox .item{
+  width: 28%;
+  height: 550px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  /* cursor: pointer; */
+  transition: 0.4s;
+  margin-bottom: 70px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+ /* for oy vea lot */
+.bigbox .item:hover{
+  transform: scale(1.10);
+  transition: 0.4s;
+}
+.bigbox .item .img{
+  width: 100%;
+  height: 55%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.bigbox .item .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.bigbox .item .text{
+  width: 100%;
+  margin: auto;
+  height: 32%;
+}
+.bigbox .item .text h1{
+  color: black;
+  font-size: 32px;
+  padding: 0px 15px;
+  margin: 0;
+}
+.bigbox .item .text p{
+  margin: 0;
+  padding: 0px 15px;
+  color: rgba(88, 88, 88, 0.897);
+}
+.bigbox .item .buu{
+  width: 100%;
+  height: 13%;
+  display: flex;
+}
+.bigbox .item .buu .reply{
+  width: 25%;
+  height: 100%;
+}
+.bigbox .item .buu .reply h1{
+  color: rgba(88, 88, 88, 0.897);
+  font-size: 19px;
+  padding-left: 15px;
+}
+.bigbox .item .buu .reply h1 span{
+  color: red;
+  font-size: 27px;
+  cursor: pointer;
+  z-index: 10;
+}
+.bigbox .item .buu .retweet{
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  z-index: 10;
+}
+.bigbox .item .buu .retweet h1{
+  color: rgba(88, 88, 88, 0.897);
+  font-size: 19px;
+  padding-right: 15px;
+}
+.bigbox .item .buu .retweet h1 span{
+  color: red;
+  font-size: 27px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+
+
+
+
+/* sign in page */
+
+div.bigBox{
+ 
+  border-style: solid;
+     border-color: black;
+     border-width: 3px;
+     height: 360px;
+     display: flex;
+     flex-direction: column;
+     margin-left: 100px;
+    padding: 20px;
+    border-radius: 15px;
+ }
+div.sign{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+div.section{
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+div.buttonSection{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 10px; */
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+div.label{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 50px;
+}
+input.input{
+  flex: 3;
+  margin-right: 50px;
+  
+}
+button.enter{
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 10%;
+  border-radius: 8px;
+  margin-left: 90%;
+  margin-top: 20px;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.595);
+  transition: 0.4s;
+}
+button.enter:hover{
+  color: black;
+  transition: 0.4s;
+  background-color: greenyellow;
+}
